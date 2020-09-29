@@ -1,0 +1,25 @@
+{
+  "name": "30days2ndlast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma22npk/30days2ndLast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ma22npk/30days2ndLast/issues"
+  },
+  "homepage": "https://github.com/ma22npk/30days2ndLast#readme",
+  "dependencies": {
+    "urix": "^0.1.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.1.0"
+  },
+  "description": ""
+}
