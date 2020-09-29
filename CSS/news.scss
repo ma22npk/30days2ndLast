@@ -1,0 +1,325 @@
+@import "_variables";
+
+.news {
+  background: #f3f3f3;
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  padding: 140px 0;
+
+  .inner {
+    width: 93%;
+    margin: 0 auto;
+
+    .news__ground__area {
+      background-color: #ffffff;
+      box-shadow: 0px 5px 12px #3e3e3e33;
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+
+      //ニュースコラム内のインナー
+      .news__ground__inner {
+        width: 92%;
+        margin: 0 auto;
+
+        //タイトルのエリア
+        .news__top__area {
+          width: 100%;
+          height: auto;
+          border-bottom: 1px solid #cecdcd;
+
+          .section-ttl {
+            font-size: 40px;
+            opacity: 1;
+            color: #3e3e3e;
+            text-align: center;
+            margin: 72px auto;
+          }
+        }
+
+        //メインコンテンツのエリア
+        .news__center__area {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: column;
+
+          .news__items {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+
+            .news__item {
+              border-bottom: 1px solid #cecdcd;
+              opacity: 1;
+              padding: 42px 8px;
+              display: flex;
+              flex-wrap: nowrap;
+              justify-content: space-between;
+              -webkit-box-align: center;
+              align-items: center;
+              height: auto;
+
+              //日付+テキストのエリアと、タイトル+アローアイコンのエリア２分割
+              .info__meta {
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                height: 100%;
+                width: 290px;
+                margin-right: 60px;
+
+                //日付
+                .info__published {
+                  width: 160px;
+                  text-align: left;
+                  vertical-align: middle;
+                  color: #3e3e3e;
+                  opacity: 1;
+                  font-size: 18px;
+                }
+
+                //テキストアイコン
+                .info__label {
+                  width: 130px;
+                  height: 32px;
+                  opacity: 1;
+                  border: 2px solid #3b69ff;
+                  border-radius: 50px;
+                  display: inline-flex;
+                  -webkit-box-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  align-items: center;
+                  color: #3e3e3e;
+                }
+              }
+
+              //タイトル（一番広いエリア）
+              .info-title-wrapper {
+                width: calc(100% - 290px);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                height: auto;
+
+                .info-title {
+                  width: auto;
+                  text-align: left;
+                  color: #3e3e3e;
+                  opacity: 1;
+                  line-height: 26px;
+                  font-size: 20px;
+                  line-height: 28px;
+                  letter-spacing: 1.4px;
+                  font-weight: 400;
+                }
+              }
+
+              //アローアイコン
+              .news-icon-wrapper {
+                width: 40px;
+                display: grid;
+                place-items: center;
+                margin-right: 16px;
+                margin-left: 32px;
+
+                .news-arrow-icon {
+                  width: 15px;
+                  height: 25px;
+                }
+              }
+            }
+          }
+        }
+        .border-btn-wrapper {
+          margin: 40px auto 40px;
+        }
+      }
+    }
+  }
+}
+
+/* タブレット用レスポンシブ===================*/
+@media (max-width: 670px) {
+  .news {
+    background: #f3f3f3;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    padding: 140px 0;
+
+    .inner {
+      width: 93%;
+      margin: 0 auto;
+
+      .news__ground__area {
+        background-color: #ffffff;
+        box-shadow: 0px 5px 12px #3e3e3e33;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        //ニュースコラム内のインナー
+        .news__ground__inner {
+          width: 100%;
+          margin: 0 auto;
+
+          //タイトルのエリア
+          .news__top__area {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #cecdcd;
+
+            .section-ttl {
+              font-size: 30px;
+              opacity: 1;
+              color: #3e3e3e;
+              text-align: center;
+              margin: 40px auto;
+            }
+          }
+
+          //メインコンテンツのエリア
+          .news__center__area {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+
+            .news__items {
+              width: 100%;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              flex-direction: column;
+
+              .news__item {
+                border-bottom: 1px solid #cecdcd;
+                opacity: 1;
+                padding: 14px 16px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                -webkit-box-align: center;
+                align-items: center;
+                height: auto;
+
+                //日付+テキストのエリアと、タイトル+アローアイコンのエリア２分割
+                .info__meta {
+                  display: flex;
+                  -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  justify-content: flex-start;
+                  height: 100%;
+                  width: 100%;
+                  margin: 0 0 12px;
+
+                  //日付
+                  .info__published {
+                    width: auto;
+                    text-align: left;
+                    vertical-align: middle;
+                    color: #3e3e3e;
+                    opacity: 1;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    margin-right: 24px;
+                  }
+
+                  //テキストアイコン
+                  .info__label {
+                    width: 80px;
+                    height: 20px;
+                    padding: 0;
+                    opacity: 1;
+                    border: 2px solid #3b69ff;
+                    border-radius: 50px;
+                    display: inline-flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    color: #3e3e3e;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 18;
+                    color: #3e3e3e;
+                  }
+                }
+
+                //タイトル（一番広いエリア）
+                .info-title-wrapper {
+                  width: 100%;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  flex-wrap: nowrap;
+                  justify-content: space-between;
+                  -webkit-box-align: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                  height: auto;
+
+                  .info-title {
+                    width: auto;
+                    text-align: left;
+                    color: #3e3e3e;
+                    opacity: 1;
+                    line-height: 22px;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 1.4px;
+                    font-weight: 400;
+                  }
+                }
+
+                //アローアイコン
+                .news-icon-wrapper {
+                  width: 40px;
+                  display: grid;
+                  place-items: center;
+                  margin-right: 0px;
+                  margin-left: 32px;
+
+                  .news-arrow-icon {
+                    width: 15px;
+                    height: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
