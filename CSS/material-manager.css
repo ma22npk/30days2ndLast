@@ -1,0 +1,85 @@
+.loader_screen {
+  z-index: 100011;
+  -webkit-box-shadow: 0 30px 50px 5px rgba(0, 0, 0, 0.44);
+          box-shadow: 0 30px 50px 5px rgba(0, 0, 0, 0.44);
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
+}
+
+.menu-trigger-wrapper {
+  z-index: 100009;
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
+}
+
+header {
+  z-index: 100007;
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
+}
+
+@media (max-width: 700px) {
+  .header-list-items {
+    z-index: 100008;
+    -webkit-box-shadow: 0 45px 60px 6px rgba(0, 0, 0, 0.44);
+            box-shadow: 0 45px 60px 6px rgba(0, 0, 0, 0.44);
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+  }
+  .header-overlay {
+    z-index: 100006;
+    -webkit-box-shadow: 0 30px 50px 5px rgba(0, 0, 0, 0.44);
+            box-shadow: 0 30px 50px 5px rgba(0, 0, 0, 0.44);
+    -webkit-transform: translateZ(40px);
+            transform: translateZ(40px);
+  }
+}
+
+footer {
+  z-index: 100001;
+  -webkit-box-shadow: 0 30px 50px 5px rgba(0, 0, 0, 0.44);
+          box-shadow: 0 30px 50px 5px rgba(0, 0, 0, 0.44);
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
+}
+
+.btn {
+  z-index: 100002;
+  -webkit-box-shadow: 0 18px 30px 3px rgba(0, 0, 0, 0.46);
+          box-shadow: 0 18px 30px 3px rgba(0, 0, 0, 0.46);
+  -webkit-transform: translateZ(30px);
+          transform: translateZ(30px);
+}
+
+.card {
+  z-index: 100003;
+  -webkit-box-shadow: 0 9px 30px 3px rgba(0, 0, 0, 0.46);
+          box-shadow: 0 9px 30px 3px rgba(0, 0, 0, 0.46);
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.strCard {
+  z-index: 100004;
+  -webkit-box-shadow: 0 9px 30px 3px rgba(0, 0, 0, 0.46);
+          box-shadow: 0 9px 30px 3px rgba(0, 0, 0, 0.46);
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+}
+
+.mask {
+  z-index: 100010;
+  -webkit-box-shadow: 0 45px 60px 6px rgba(0, 0, 0, 0.44);
+          box-shadow: 0 45px 60px 6px rgba(0, 0, 0, 0.44);
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+}
+
+.to-top-btn {
+  z-index: 100005;
+  -webkit-box-shadow: 0 18px 30px 3px rgba(0, 0, 0, 0.46);
+          box-shadow: 0 18px 30px 3px rgba(0, 0, 0, 0.46);
+  -webkit-transform: translateZ(30px);
+          transform: translateZ(30px);
+}
+/*# sourceMappingURL=material-manager.css.map */
