@@ -53,3 +53,26 @@
     });
   });
 
+  //  ==========================================
+  // results
+  new Swiper(".swiper-container", {
+    speed: 400,
+    spaceBetween: 40,
+    slidesPerView: 1.5,
+    spaceBetween: 24,
+    width: 422,
+    loop: true,
+    loopedSlides: 6,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      900: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+    },
+  });
+  //  ==========================================
