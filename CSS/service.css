@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.service {
+  padding: 60px 0 120px;
+  left: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#F3F3F3), color-stop(39%, #F3F3F3), color-stop(30%, #3E3E3E), to(#3E3E3E));
+  background: linear-gradient(0deg, #F3F3F3 0%, #F3F3F3 39%, #3E3E3E 30%, #3E3E3E 100%);
+}
+
+.service .inner {
+  width: 75%;
+}
+
+.service .inner .section-ttl {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 72px;
+  font-weight: 600;
+}
+
+.service .inner .service-items {
+  -webkit-box-shadow: 0px 5px 12px #3E3E3E33;
+  box-shadow: 0px 5px 12px #3E3E3E33;
+  opacity: 1;
+  width: 100%;
+  margin-bottom: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  background-color: #ffffff;
+  margin: 0 auto;
+  height: auto;
+}
+
+.service .inner .service-items .service__item {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(33% - 1px);
+  padding: 80px 40px;
+}
+
+.service .inner .service-items .service__item .service__item__top {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.service .inner .service-items .service__item .service__item__top img {
+  width: 60px;
+  height: auto;
+}
+
+.service .inner .service-items .service__item .service-item-center {
+  margin-bottom: 20px;
+}
+
+.service .inner .service-items .service__item .service-item-center .service__item__title {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #3E3E3E;
+  opacity: 1;
+  line-height: 28px;
+}
+
+.service .inner .service-items .service__item .service__item__bottom {
+  margin-bottom: 0;
+}
+
+.service .inner .service-items .service__item .service__item__bottom p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01px;
+  color: #3E3E3E;
+  text-align: left;
+  font-weight: 400;
+}
+
+/* タブレット用レスポンシブ===================*/
+@media (max-width: 670px) {
+  .service {
+    padding: 60px 0 120px;
+    left: 0px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#F3F3F3), color-stop(39%, #F3F3F3), color-stop(30%, #3E3E3E), to(#3E3E3E));
+    background: linear-gradient(0deg, #F3F3F3 0%, #F3F3F3 39%, #3E3E3E 30%, #3E3E3E 100%);
+  }
+  .service .inner {
+    width: 94%;
+  }
+  .service .inner .section-ttl {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 72px;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: 700;
+  }
+  .service .inner .service-items {
+    -webkit-box-shadow: 0px 5px 12px #3E3E3E33;
+    box-shadow: 0px 5px 12px #3E3E3E33;
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: auto;
+  }
+  .service .inner .service-items .service__item {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 80px 40px;
+  }
+  .service .inner .service-items .service__item .service__item__top {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  .service .inner .service-items .service__item .service__item__top img {
+    width: 60px;
+    height: auto;
+  }
+  .service .inner .service-items .service__item .service-item-center {
+    margin-bottom: 20px;
+  }
+  .service .inner .service-items .service__item .service-item-center .service__item__title {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: #3E3E3E;
+    opacity: 1;
+    line-height: 23px;
+  }
+  .service .inner .service-items .service__item .service__item__bottom {
+    margin-bottom: 0;
+  }
+  .service .inner .service-items .service__item .service__item__bottom p {
+    letter-spacing: 0.01px;
+    color: #3E3E3E;
+    text-align: left;
+    line-height: 24px;
+  }
+}
+/*# sourceMappingURL=service.css.map */
