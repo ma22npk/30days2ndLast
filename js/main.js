@@ -10,7 +10,16 @@
     });
     /* JQuery ハンバーガーメニュー ==========================*/
 
-
+    // toTopBtn ===========================
+    if ($(window).scrollTop() > 300) {
+      $(".to-top-btn").addClass("is-over");
+    } else {
+      $(".to-top-btn").removeClass("is-over");
+    }
+    if ($(window).scrollTop() > $(".footer").offset().top - 1000) {
+      $(".to-top-btn").removeClass("is-over");
+    }
+  });
     // スムーススクロール
     jQuery('a[href^="#"]').click(function() {
         let header = jQuery(".header").innerHeight();
