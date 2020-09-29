@@ -1,0 +1,139 @@
+@import "_variables";
+
+.price {
+  padding: 120px 0 80px;
+
+  .inner {
+    width: 74%;
+    margin: 0 auto;
+
+    .section-ttl {
+      text-align: center;
+      margin-bottom: 60px;
+      color: #3E3E3E;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 44px;
+    }
+
+    table {
+      width: 100%;
+
+      tbody {
+        text-align: center;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        border: 1px solid #3E3E3E;
+        background: #3e3e3e;
+        ;
+        font-family: Montserrat, sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 36px;
+
+        //thは見出しのこと
+        tr {
+          height: 58px;
+        }
+
+        th {
+          vertical-align: middle;
+          height: auto;
+          width: 30%;
+          color: #fff;
+
+          border-bottom: solid #fff 1px;
+
+        }
+
+        //tdはデータセルのこと
+        td {
+          vertical-align: middle;
+          border: 1px solid #3E3E3E;
+          height: auto;
+          width: 70%;
+          background-color: #ffffff;
+          color: #3e3e3e;
+          text-align: left;
+          padding: 0.45em 1.6em;
+
+        }
+      }
+    }
+
+    p {
+      font-size: 13px;
+      margin-top: 10px;
+    }
+  }
+}
+
+/* タブレット用レスポンシブ===================*/
+@media(max-width:670px) {
+  .price {
+    padding: 40px 0 60px;
+
+    .inner {
+      width: 94%;
+      margin: 0 auto;
+
+      .section-ttl {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      table {
+        width: 100%;
+
+        tbody {
+          text-align: center;
+          vertical-align: middle;
+          width: 100%;
+          height: auto;
+          border: 1px solid #3E3E3E !important;
+          background: #3e3e3e;
+          font-size: 19px;
+          line-height: 28px;
+          font-weight: 500;
+          font-family: Montserrat;
+
+
+          //thは見出しのこと
+          tr {
+            height: 58px;
+          }
+
+          th {
+            vertical-align: middle;
+            height: auto;
+            width: 26%;
+            color: #fff;
+            padding: .8em 20px;
+            border-bottom: solid #fff 1px;
+
+
+          }
+
+          //tdはデータセルのこと
+          td {
+            vertical-align: middle;
+            border: 1px solid #3E3E3E;
+            height: auto;
+            width: 70%;
+            background-color: #ffffff;
+            color: #3E3E3E;
+            text-align: left;
+            padding-left: 40px;
+
+          }
+        }
+      }
+
+      p {
+        font-size: 13px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
