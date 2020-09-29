@@ -1,0 +1,209 @@
+@charset "UTF-8";
+.faq {
+  width: 100%;
+  height: auto;
+  background: transparent url(/images/sunyu-kim-1053375-unsplash@2x.png) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 80px 0px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.faq .inner {
+  width: 94%;
+}
+
+.faq .inner .section-ttl {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq .inner .accordion-items {
+  margin-left: auto;
+  width: 600px;
+}
+
+.faq .inner .accordion-items .faq__accordion {
+  letter-spacing: 1px;
+  margin-bottom: 33px;
+  border-radius: 7px;
+  background-color: white;
+  width: 100%;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner {
+  padding: 20px 18px 11px 18px;
+  width: auto;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header .faq_icon {
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  background: #3b69ff 0% 0% no-repeat padding-box;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header .faq_q {
+  margin-left: 12px;
+  margin-right: 12px;
+  width: calc(100% - 40px);
+  height: 100%;
+  line-height: 100%;
+  text-align: left;
+  vertical-align: middle;
+  line-height: 26px;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header .faq-switch {
+  background: url(/images/plus.svg) no-repeat center center;
+  width: 26px;
+  height: 26px;
+  margin-right: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header.is-active .faq-switch {
+  background: url(/images/minus.svg) no-repeat center center;
+  width: 26px;
+  height: 26px;
+  margin-right: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_body {
+  border-radius: 7px 7px 7px 7px;
+  background-color: #3b69ff33;
+  padding: 22px 16px;
+  display: none;
+}
+
+.faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_body p {
+  font-family: Yu Gothic UI;
+  line-height: 24px;
+  letter-spacing: 0px;
+}
+
+/* タブレット用レスポンシブ===================*/
+@media (max-width: 700px) {
+  .faq {
+    width: 100%;
+    height: auto;
+    background: transparent url(/images/sunyu-kim-1053375-unsplash@2x.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding: 80px 0px;
+    background-size: cover;
+  }
+  .faq .inner {
+    width: 94%;
+  }
+  .faq .inner .section-ttl {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .faq .inner .accordion-items {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .faq .inner .accordion-items .faq__accordion {
+    letter-spacing: 1px;
+    margin-bottom: 33px;
+    border-radius: 7px;
+    background-color: white;
+    width: 100%;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner {
+    padding: 20px 18px 11px 18px;
+    width: auto;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header .faq_icon {
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    background: #3b69ff 0% 0% no-repeat padding-box;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header .faq_q {
+    margin-left: 12px;
+    margin-right: 12px;
+    width: calc(100% - 40px);
+    height: 100%;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 26px;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header .faq-switch {
+    margin-right: 0;
+    cursor: pointer;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header img.faq-switch.plus {
+    display: block;
+    opacity: 1;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header img.faq-switch.plus.is-active {
+    display: none;
+    opacity: 0;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header img.faq-switch.minus {
+    display: none;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_header img.faq-switch.minus.is-active {
+    display: block;
+    opacity: 1;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_body {
+    border-radius: 7px 7px 7px 7px;
+    background-color: #3b69ff33;
+    padding: 22px 16px;
+    display: none;
+  }
+  .faq .inner .accordion-items .faq__accordion .faq__accordion_inner .faq__accordion_body p {
+    font-family: Yu Gothic UI;
+    line-height: 24px;
+    letter-spacing: 0px;
+  }
+}
+/*# sourceMappingURL=f_and_a.css.map */

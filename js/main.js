@@ -45,5 +45,11 @@
         jQuery('.header-nav-item-a').removeClass('is-active');
         jQuery(this).addClass('is-active');
         return false;
+  //アコーディオン
+  $(function () {
+    $(".faq__accordion_header").on("click", function () {
+      $(this).next().slideToggle();
+      $(this).toggleClass("is-active");
     });
+  });
 
