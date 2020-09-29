@@ -1,0 +1,191 @@
+@import "_variables";
+
+.comments {
+  padding: 60px 0 120px;
+  width: 100%;
+  position: relative;
+
+  &:after {
+    top: 24%;
+    left: 0;
+    right: 24%;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    background-color: #3E3E3E;
+    z-index: 1;
+  }
+
+  .inner {
+    width: 94%;
+    margin: 0 auto;
+
+
+    .comments-items {
+      width: 100%;
+
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    //コメントのメイン
+    .comments-contents {
+      box-shadow: 0px 0px 10px #00000029;
+      opacity: 1;
+      height: auto;
+      background-color: white;
+      padding: 140px 60px 60px;
+      z-index: 22;
+
+      .section-ttl {
+        margin-bottom: 68px;
+        text-align: left;
+        letter-spacing: 2px;
+        color: #3E3E3E;
+      }
+
+      .comments-staff-box {
+        width: 620px;
+        display: flex;
+        -webkit-box-align: start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        .comments-staff-img {
+          top: 0;
+          left: 0;
+          width: 110px;
+          height: 110px;
+
+        }
+
+        .comment-txt-wrapper {
+          width: 480px;
+          height: auto;
+
+          p.comments-staff-comment {
+
+            text-align: left;
+            font-size: 18px;
+            color: #3E3E3E;
+            letter-spacing: 0px;
+            opacity: 1;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+
+    div.comments-staffs-img-box {
+      width: calc(100% - 770px);
+      height: auto;
+      z-index: 22;
+
+      img.comments-img-staffs {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+}
+
+/* タブレット用レスポンシブ===================*/
+@media(max-width:670px) {
+  .comments {
+    padding: 60px 0 120px;
+    width: 100%;
+    position: relative;
+
+    &:after {
+      top: 10%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      content: "";
+      background-color: #3E3E3E;
+      z-index: 1;
+    }
+
+    .inner {
+      width: 94%;
+      margin: 0 auto;
+
+
+      .comments-items {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      //コメントのメイン
+      .comments-contents {
+        box-shadow: 0px 0px 10px #00000029;
+        opacity: 1;
+        height: auto;
+        background-color: white;
+        padding: 40px 20px;
+        z-index: 22;
+
+        .section-ttl {
+          margin-bottom: 68px;
+          text-align: left;
+          letter-spacing: 2px;
+          font-size: 30px;
+          line-height: 44px;
+          font-weight: 700;
+        }
+
+        .comments-staff-box {
+          width: 100%;
+          display: flex;
+          -webkit-box-align: start;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          margin-bottom: 70px;
+
+          .comments-staff-img {
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+
+          }
+
+          .comment-txt-wrapper {
+            width: calc(100% - 100px);
+            height: auto;
+
+            p.comments-staff-comment {
+
+              text-align: left;
+              font-size: 14px;
+              color: #3E3E3E;
+              letter-spacing: 0px;
+              opacity: 1;
+              line-height: 22px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      div.comments-staffs-img-box {
+        display: none;
+      }
+
+    }
+  }
+}
