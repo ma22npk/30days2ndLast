@@ -1,14 +1,19 @@
-    /* JQuery ハンバーガーメニュー ==========================*/
-    $(function() {
-        $('.btn-trigger, .header-overlay').on('click', function() {
-            $(this).toggleClass('active');
-            $('.header__nav').toggleClass('active');
-            $('body').toggleClass('open');
-            $('.header-overlay').toggleClass('open');
-            return false;
-        });
+// コード内に存在する潜在的な問題を早期に発見しやすくなります。
+// strictモードのコードは高速に実行することができる場合がある（JSエンジンによる最適化処理を困難にする誤りを修正するため
+"use strict";
+
+{
+  /* JQuery ハンバーガーメニュー ==========================*/
+  $(function () {
+    $(".btn-trigger, .header-overlay").on("click", function () {
+      $(this).toggleClass("active");
+      $(".header__nav").toggleClass("active");
+      $("body").toggleClass("open");
+      $(".header-overlay").toggleClass("open");
+      return false;
     });
-    /* JQuery ハンバーガーメニュー ==========================*/
+  });
+  /* JQuery ハンバーガーメニュー ==========================*/
 
   // JQuery フェードイン ===========================
   $(window).on("scroll", function () {
@@ -58,26 +63,6 @@
       $(".to-top-btn").removeClass("is-over");
     }
   });
-    // スムーススクロール
-    jQuery('a[href^="#"]').click(function() {
-        let header = jQuery(".header").innerHeight();
-        let speed = 300;
-        let id = jQuery(this).attr("href");
-        let target = jQuery("#" == id ? "html" : id);
-        let position = jQuery(target).offset().top - header;
-        if ("fixed" !== jQuery(".header").css("position")) {
-            position = jQuery(target).offset().top;
-        }
-        if (0 > position) {
-            position = 0;
-        }
-        jQuery("html, body").animate({
-                scrollTop: position
-            },
-            speed
-        );
-        return false;
-    });
   // スムーススクロール
   jQuery('a[href^="#"]').click(function () {
     let header = jQuery(".header").innerHeight();
@@ -115,19 +100,6 @@
     return false;
   });
 
-    // スクロール判定
-    jQuery(window).on("scroll", function() {
-        if (100 < jQuery(this).scrollTop()) {
-            jQuery('.totop').addClass('is-show');
-        } else {
-            jQuery('.totop').removeClass('is-show');
-        }
-    });
-    // ヘッダーの色を変える ===========================
-    jQuery('.header-nav-item-a').click(function() {
-        jQuery('.header-nav-item-a').removeClass('is-active');
-        jQuery(this).addClass('is-active');
-        return false;
   //アコーディオン
   $(function () {
     $(".faq__accordion_header").on("click", function () {
