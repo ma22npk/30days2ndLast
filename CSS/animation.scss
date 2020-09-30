@@ -1,3 +1,248 @@
+@import "_variables";
+
+/*ローディングアニメーション*/
+
+.loader_screen {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: hsla(0, 0%, 15%, 0.95);
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    background: #ec934b;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+
+.loader {
+    color: #ec934b;
+    text-indent: -9999em;
+    margin: 88px auto;
+    font-size: 11px;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader:after {
+    left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+@keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+//ホバーアニメーション
+.hover-scale-up {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.4s;
+    &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+// アニメーション ===========================
+[data-zoom-up] {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: scale(0.8);
+}
+
+[data-zoom-up].data-zoom-up {
+    opacity: 1;
+    transform: scale(1);
+}
+
+// フェードイン ===========================
+[data-fadeIn] {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateY(40px);
+}
+
+[data-fadeIn].is-over {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+// 横のフェードイン ---------------------------
+[data-fadeId-right] {
+    transform: translateX(50px);
+    /* 最初は元の位置より左にずらしておく */
+    opacity: 0;
+    /* 最初は非表示にしておく */
+    transition: opacity 1s, transform 0.4s;
+    /* 透明度と位置を設定 */
+}
+
+
+/* 条件を満たしたあとに追加するクラス */
+
+[data-fadeId-left].is-over {
+    opacity: 1;
+    /* 表示させる */
+    transform: translateX(0);
+    /* 位置を最初の位置に戻す */
+}
+
+[data-fadeId-left] {
+    transform: translateX(-50px);
+    /* 最初は元の位置より左にずらしておく */
+    opacity: 0;
+    /* 最初は非表示にしておく */
+    transition: opacity 1s, transform 0.4s;
+    /* 透明度と位置を設定 */
+}
+
+
+/* 条件を満たしたあとに追加するクラス */
+
+[data-fadeId-right].is-over {
+    opacity: 1;
+    /* 表示させる */
+    transform: translateX(0);
+    /* 位置を最初の位置に戻す */
+}
+
+// 上下のフェードイン ---------------------------
+[data-fadeId-bottom] {
+    transform: translateY(50px);
+    /* 最初は元の位置より左にずらしておく */
+    opacity: 0;
+    /* 最初は非表示にしておく */
+    transition: opacity 1s, transform 0.4s;
+    /* 透明度と位置を設定 */
+}
+
+
+/* 条件を満たしたあとに追加するクラス */
+
+[data-fadeId-bottom].is-over {
+    opacity: 1;
+    /* 表示させる */
+    transform: translateY(0);
+    /* 位置を最初の位置に戻す */
+}
+
+[data-fadeId-top] {
+    transform: translateY(-50px);
+    /* 最初は元の位置より左にずらしておく */
+    opacity: 0;
+    /* 最初は非表示にしておく */
+    transition: opacity 1s, transform 0.4s;
+    /* 透明度と位置を設定 */
+}
+
+
+/* 条件を満たしたあとに追加するクラス */
+
+[data-fadeId-top].is-over {
+    opacity: 1;
+    /* 表示させる */
+    transform: translateY(0);
+    /* 位置を最初の位置に戻す */
+}
+
+
+/* --- 全体のBOX定義 ---------------------------------------- */
+
+.box {
+    position: relative;
+    overflow: hidden;
+}
+
+//自作アニメ
+[rotateIn] {
+    animation: rotateIn 0.9s infinite;
+}
+
+[rotateIn].is-over {
+    @-webkit-keyframes rotateIn {
+        0% {
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-transform: rotate(-200deg);
+            transform: rotate(-200deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-transform: rotate(0);
+            transform: rotate(0);
+            opacity: 1;
+        }
+    }
+    @keyframes rotateIn {
+        0% {
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-transform: rotate(-200deg);
+            -ms-transform: rotate(-200deg);
+            transform: rotate(-200deg);
+            opacity: 0;
+        }
+        100% {
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+            transform: rotate(0);
+            opacity: 1;
+        }
+    }
+}
+
+
 /* CSS to-top-btn ==========================*/
 
 .to-top-btn {
